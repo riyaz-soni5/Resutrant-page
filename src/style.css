@@ -1,0 +1,198 @@
+:root{
+    --border-set: 2px solid black;
+    --width-set: 500px;
+    --border-radius-set: 20px;
+    --food-content-height: 70%;
+
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#branding{
+    background-image: url('/src/asset/mountain-img.jpg');
+    color: yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: 105% 300px;
+    background-repeat: no-repeat;
+    background-position: -10.5px -50px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+    margin-top: 1%;
+    margin: 5px;
+}
+
+nav button{
+    width: 100px;
+    height: 50px;
+}
+
+#content{
+    border: var(--border-set)
+}
+
+footer{
+    align-self: center;
+}
+
+/* Home page */
+
+#home-content{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    
+}
+
+#opening-hour{
+    background-color: rgba(255, 0, 0, 0.654);
+    color: white;
+    
+    width: var(--width-set);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border-set);
+    border-radius: var(--border-radius-set);
+    height: 500px;
+}
+
+
+#home-content > img{
+    width: var(--width-set);
+    border: var(--border-set);
+    border-radius:  var(--border-radius-set)
+}
+
+
+/* menu page */
+
+#menu{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.food-item{
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--width-set)- 50px);
+    height: var(--width-set);
+    border: var(--border-set);
+
+}
+
+.food-item img{
+    height: var(--food-content-height);
+
+}
+
+
+.food-des{
+    height: 30%;
+    display: flex;
+    border: var(--border-set);
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.food-des > div{
+    display: flex;
+
+    height: 100%;
+    font-size: x-large;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-set);
+}
+
+.food-des div:nth-child(2){
+    color: orangered;
+}
+
+
+
+
+#contact-div{
+    display: flex;
+    justify-content: center;
+}
+
+#contactContainer{
+
+  width: 50vw;
+  height: 100vh;
+  background-color: grey;
+
+  display: flex;
+  flex-direction: column;
+  border: var(--border-set);
+  padding: 5%;
+  gap: 5px;
+
+}
+
+
+#contactContainer div{
+    height: 50px;
+    background-color: white;
+
+}
+
+
+#contactContainer div:nth-child(2){
+    text-align: center;
+    font-size: xx-large;
+}
+
+.Res-Photo{
+    border-radius: 50%;
+    align-self: center;
+    width: 200px;
+    height: 190px;
+
+}
+
+
+#details-div{
+    display: flex;
+    flex-direction: column;
+}
+
+#details-div img{
+    width: 30px;
+}
+
+
+#details-div div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
